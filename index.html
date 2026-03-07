@@ -27,6 +27,21 @@
         .bg-facebook { background-color: #4267B2; }
         .bg-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
     </style>
+    <!-- Kode Meta Pixel Disini -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1678953070130666');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>...</noscript>
+    <!-- Akhir Kode Meta Pixel -->
 </head>
 <body class="bg-white min-h-screen flex items-center justify-center p-4 py-12 md:py-24">
 
@@ -308,7 +323,7 @@
             <!-- Tombol Continue Reading -->
             <div class="flex justify-center mt-6">
                 <!-- Tambahkan link tujuan di href="..." dan ganti tracking event-nya jika perlu -->
-                <a href="https://m.innovel.ltd/chapter/1692622848/24692753924141350912002?auto_jump=true&utm_source=facebook_ads" target="_blank" onclick="gtag('event', 'add_to_wishlist', { item_name: '[Judul Novel Baru]' });" class="bg-primary hover-bg-primary text-white font-medium py-3 px-12 md:px-16 rounded-full transition-colors shadow-md text-center inline-block">
+                <a href="https://m.innovel.ltd/chapter/1692622848/24692753924141350912002?auto_jump=true&utm_source=facebook_ads" target="_blank" onclick="gtag('event', 'add_to_wishlist', { item_name: 'Terlarang' });" class="bg-primary hover-bg-primary text-white font-medium py-3 px-12 md:px-16 rounded-full transition-colors shadow-md text-center inline-block">
                     Continue Reading
                 </a>
             </div>
@@ -324,3 +339,4 @@
 </body>
 
 </html>
+
